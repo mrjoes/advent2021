@@ -53,10 +53,10 @@ with open('input16.txt') as fp:
             elif t == 3:
                 return p, max(res)
             elif t == 5:
-                return p, 1 if res[0] > res[1] else 0
+                return p, int(res[0] > res[1])
             elif t == 6:
-                return p, 1 if res[0] < res[1] else 0
+                return p, int(res[0] < res[1])
             elif t == 7:
-                return p, 1 if res[0] == res[1] else 0
+                return p, int(res[0] == res[1])
 
     print(run_pack(0))
