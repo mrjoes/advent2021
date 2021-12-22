@@ -19,7 +19,7 @@ with open('input21.txt') as fp:
     def play(player, p0, s0, p1, s1):
         global d
         d += 1
-        if d % 100000:
+        if d % 1000 == 0:
             print(d)
 
         if s0 >= 21:
